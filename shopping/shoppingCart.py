@@ -78,6 +78,7 @@ if __name__ == '__main__':
 
       choice = input("\n請輸入選項 (1/2/3/4/5): ")
 
+        
       if choice == "1":
           product_id = int(input("\n請輸入要加入購物車的商品編號: "))
           cart.add_to_cart(product_id)
