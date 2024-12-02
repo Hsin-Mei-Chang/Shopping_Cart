@@ -18,7 +18,7 @@ class ShoppingCart:
             print("\n無效的商品編號或商品已售完。")
 
     def delete_to_cart(self, product_id):
-        if product_id in self.products and self.products[product_id]['quantity'] > 0:
+        if product_id in self.shopping_cart and self.products[product_id]['quantity'] > 0:
             # ** 為可變長度的字典參數，將會自動展開
             self.shopping_cart.remove({"id": product_id, **self.products[product_id]})
             print(f"\n{self.products[product_id]['name']} 已刪除購物車。")
